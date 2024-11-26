@@ -1,0 +1,105 @@
+:root{
+    --roxo-bg: #6A0572;
+    --branco-bg: #F5F2DC;
+
+
+    --bg-default: url('https://www.ticasino.com/uploads/_2000xAUTO_crop_center-center_none/Bus_Tours_Midpage_2400X1200.jpg');
+    --bg-argentina: url('https://wallpaper.forfun.com/fetch/c5/c55765dd0a538ab646280d2cf4c1923b.jpeg?download=earth-cerro_torre-argentina-cerro_chalt%C3%A9n-glacier-mount_fitzroy-patagonia-1522961.jpeg');
+    --bg-cuba: url('https://s1.picswalls.com/wallpapers/2014/07/25/awesome-cuba-wallpaper_043232386_107.jpg');
+    --bg-indonesia: url('https://s1.picswalls.com/wallpapers/2014/08/08/indonesia-desktop-background_020529203_164.jpg');
+    --bg-italia: url('https://wallpapercat.com/w/full/d/2/7/31660-3840x2160-desktop-4k-italy-wallpaper.jpg');
+    --bg-franca: url('https://wallpapercave.com/wp/wp1856659.jpg');
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: var(--bg-default);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    background-color:beige;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 20px;
+}
+main{
+    flex-grow: 1;
+}
+.navbar p{
+    font-family: Arial, Helvetica, sans-serif;
+    color:purple
+}
+
+.navbar button{
+    border: 0;
+    background-color: purple;
+    color: white;
+    height: 35px;
+    border-radius: 15px;
+}
+
+footer{
+    text-align: center;
+    height: 50px;
+    justify-content: space-between;
+    padding: 10px 40px 0px 40px;
+    background-color: var(--branco-bg);
+}
+footer p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+}
+
+#sidebar{
+    margin-left: 10px;
+    padding: 40px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.cards-mae{
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    height: calc(100% - 130px);
+
+}
+
+.cards-mae aside{
+    display: flex;
+    flex-direction: column;
+    width: 142px;
+    gap: 5px;
+}
+.cards-mae button{
+    border: 0;
+    background-color: purple;
+    color: lightgray;
+}
+
+.titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 16px;
+}
